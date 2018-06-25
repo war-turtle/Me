@@ -1,0 +1,17 @@
+$purple-color: rgb(78, 89, 131);
+
+#slide-out {
+  li {
+    a {
+      color: $purple-color;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+}
+
+.logo {
+  .user-view {
+    padding: 100px;
+  }
+}
