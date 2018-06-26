@@ -5,3 +5,27 @@
 
 .logo .user-view {
   padding: 100px; }
+
+nav {
+  padding-left: 300px;
+  background-color: rgba(255, 255, 255, 0.7); }
+
+.main {
+  padding-left: 300px;
+  margin-top: 50px; }
+
+.heading-container h2 {
+  margin-top: 0px; }
+
+.my-image {
+  border-radius: 50% !important;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 10px;
+  position: relative;
+  top: 50px !important; }
+
+@media only screen and (max-width: 992px) {
+  .main,
+  nav {
+    padding-left: 0px; } }
