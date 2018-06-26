@@ -8,10 +8,16 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
   res.render('pages/index', {
     about: 'purple white-text',
-    education: '',
     resume: '',
-    achieve: '',
-    skills: ''
+    works: ''
+  });
+});
+
+app.get('/works', (req, res) => {
+  res.render('pages/works', {
+    about: '',
+    resume: '',
+    works: 'purple white-text'
   });
 });
 
