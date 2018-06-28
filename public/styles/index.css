@@ -8,3 +8,13 @@
   margin-top: 10px;
   position: relative;
   top: 50px !important; }
+
+.typer > .wrap {
+  border-right: 0.08em solid #000000ff;
+  animation: ticking 500ms linear infinite; }
+
+@keyframes ticking {
+  0% {
+    border-right-color: #000000; }
+  100% {
+    border-right-color: transparent; } }
