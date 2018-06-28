@@ -7,17 +7,17 @@ app.use(express.static('public'));
 
 app.get('/', (req, res) => {
   res.render('pages/index', {
-    about: 'purple white-text',
-    resume: '',
-    works: ''
+    about: true,
+    resume: false,
+    works: false
   });
 });
 
 app.get('/works', (req, res) => {
   res.render('pages/works', {
-    about: '',
-    resume: '',
-    works: 'purple white-text'
+    about: false,
+    resume: false,
+    works: true
   });
 });
 

@@ -1,0 +1,48 @@
+$night-background: rgb(26, 25, 26);
+$night-one: rgb(120, 176, 160);
+$night-two: rgb(255, 209, 82);
+
+$day-background: #fff;
+$day-one: rgb(128, 0, 128);
+$day-two: rgb(0, 128, 128);
+
+nav {
+  padding-left: 300px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.main {
+  padding-left: 300px;
+  margin-top: 50px;
+}
+
+.bkg {
+  background-color: #fff !important;
+}
+
+.one-text {
+  color: purple !important;
+}
+
+.two-text {
+  color: teal !important;
+}
+
+.one-bkg {
+  background-color: purple !important;
+}
+
+.two-bkg {
+  background-color: teal !important;
+}
+
+.text-color {
+  color: #fff !important ;
+}
+
+@media only screen and (max-width: 992px) {
+  .main,
+  nav {
+    padding-left: 0px;
+  }
+}

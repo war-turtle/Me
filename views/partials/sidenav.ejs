@@ -1,4 +1,4 @@
-<ul id="slide-out" class="sidenav sidenav-fixed">
+<ul id="slide-out" class="sidenav sidenav-fixed bkg">
 
   <li class="logo">
     <div class="user-view">
@@ -8,13 +8,30 @@
     </div>
   </li>
   <li>
-    <a class="waves-effect hoverable <%= about %>" href="/">About</a>
+    <a class="waves-effect hoverable 
+      <% if(about) { %>
+        one-bkg text-color
+      <% }else{ %>
+        one-text
+      <% } %>
+      " href="/">About</a>
   </li>
   <li>
-    <a class="waves-effect hoverable <%= resume %>" href="/resume">Resume</a>
+    <a class="waves-effect hoverable 
+      <% if(resume) { %>
+        one-bkg text-color
+      <% }else{ %>
+        one-text
+      <% } %>" href="/resume">Resume</a>
   </li>
   <li>
-    <a class="waves-effect hoverable <%= works %>" href="/works">Works</a>
+    <a class="waves-effect hoverable 
+      <% if(works) { %>
+        one-bkg text-color
+      <% }else{ %>
+        one-text
+      <% } %>
+    " href="/works">Works</a>
   </li>
 
 </ul>
