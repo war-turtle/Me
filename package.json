@@ -6,13 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node-sass public/scss -o public/styles && node index.js",
-    "start": "nodemon -e ejs,scss,js,json --exec npm run build"
+    "dev": "nodemon -e ejs,scss,js,json --exec npm run build",
+    "start": "node index.js"
   },
   "author": "war-turtle",
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.6.1",
-    "express": "^4.16.3",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
     "node-sass": "^4.9.0"
   }
 }

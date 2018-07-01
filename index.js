@@ -2,6 +2,8 @@ const express = require('express');
 
 const app = express();
 
+const port = process.env.PORT || 5000;
+
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
@@ -21,6 +23,10 @@ app.get('/works', (req, res) => {
   });
 });
 
-app.listen(5000, () => {
-  console.log('server is listen at port 5000');
+app.get('/try', (req, res) => {
+  res.render('pages/try');
+});
+
+app.listen(port, () => {
+  console.log('server is listen at port ' + port);
 });

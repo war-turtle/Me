@@ -1,0 +1,22 @@
+.grass-1 {
+  fill: #8dce55;
+}
+
+.grass-2 {
+  fill: #6dc82a;
+}
+
+.contain {
+  position: fixed;
+  z-index: 1000;
+  width: 20vw;
+  height: 20vw;
+  left: 10%;
+  bottom: -2vw;
+}
+
+.contain svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}

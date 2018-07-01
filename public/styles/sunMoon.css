@@ -1,0 +1,25 @@
+.sunMoon-1,
+.sunMoon-2 {
+  fill: #ffc400; }
+
+.sunMoon-2 {
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 6.05px; }
+
+.sunMoon-3 {
+  fill: #e7e980; }
+
+.containSunMoon {
+  position: fixed;
+  width: 400px;
+  height: auto;
+  right: 0px;
+  top: 0px;
+  transform: translate(50%, -50%) rotate(-90deg);
+  z-index: 1000; }
+
+.containSunMoon svg {
+  position: relative;
+  width: 100%;
+  height: 100%; }

@@ -3,7 +3,6 @@
 
 <head>
   <% include ../partials/head %>
-    <link rel="stylesheet" href="styles/works.css">
 </head>
 
 <body class="bkg">
@@ -68,12 +67,14 @@
         </div>
 
 
-        <% include ../partials/footer.ejs %>
+        <% include ../partials/footer %>
       </div>
 
-      <script src="js/lib/TweenMax.min.js"></script>
-      <script src="js/lib/materialize.js"></script>
-      <script src="js/index.js"></script>
+      <% include ../partials/grass %>
+        <% include ../partials/sunMoon %>
+          <script src="js/lib/TweenMax.min.js"></script>
+          <script src="js/lib/materialize.js"></script>
+          <script src="js/main.js"></script>
 </body>
 
 </html>
