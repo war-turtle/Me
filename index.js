@@ -27,6 +27,10 @@ app.get('/try', (req, res) => {
   res.render('pages/try');
 });
 
+app.get('*', (req, res) => {
+  res.render('pages/404');
+});
+
 app.listen(port, () => {
   console.log('server is listen at port ' + port);
 });
