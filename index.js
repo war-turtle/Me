@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 
 const app = express();
 
@@ -21,6 +22,11 @@ app.get('/works', (req, res) => {
     resume: false,
     works: true
   });
+});
+
+app.get('/resume', (req, res) => {
+  const file = path.join(__dirname, '/public/images/Resume.pdf');
+  res.download(file);
 });
 
 app.get('/try', (req, res) => {
