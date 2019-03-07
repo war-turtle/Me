@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
 
 const app = express();
 
@@ -25,8 +26,12 @@ app.get('/works', (req, res) => {
 });
 
 app.get('/resume', (req, res) => {
-  const file = path.join(__dirname, '/public/images/Resume.pdf');
-  res.download(file);
+  // const file = path.join(__dirname, '/public/images/Resume.pdf');
+  // res.download(file);
+  const file = path.join(__dirname, 'public/images/Resume.pdf');
+  const data = fs.readFileSync(file);
+  res.contentType('application/pdf');
+  res.send(data);
 });
 
 app.get('/try', (req, res) => {
